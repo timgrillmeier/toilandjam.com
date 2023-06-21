@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html class=" js pointerevents" lang="en" xml:lang="en" xmlns= "http://www.w3.org/1999/xhtml">
+	<head>
+		<style>
+			/* style block 1 to update body style */
+			body {
+				background: #FFFEFD;
+				color: #F9F7F6;
+				font-family: 'Courier New', sans-serif;
+			}
+
+			@media (prefers-color-scheme: light) {
+				body {
+					background: #FFFEFD;
+					color: #030301;
+				}
+			}
+
+			@media (prefers-color-scheme: dark) {
+				body {
+					background: #030301;
+					color: #F9F7F6;
+				}
+			}
+		</style>
+		<meta http-equiv="Content-Language" content="en">
+		<meta name="google" content="notranslate">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width">
+
+		<meta name="theme-color" content="#F9F7F5" />
+
+		<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+		<link rel="manifest" href="site.webmanifest">
+
+		<meta property="og:title" content="Toil & Jam">
+		<meta property="og:description" content="We’re a creative technology & digital experience collective from Brisbane, Australia. Let's craft some good impressions.">
+		<meta property="og:image" content="/img/web_design_development_digital_experience_brisbane_australia_zealand.png">
+		<meta property="og:url" content="https://toilandjam.com">
+		<meta property="twitter:image" content="/img/web_design_development_digital_experience_brisbane_australia_zealand.png">
+		<meta property="twitter:site" content="@toilandjam">
+		<meta name="twitter:card" content="summary_large_image">
+
+		<meta name="keywords" content="Digital Experience, Brisbane, Creative, Tech, Technology, DX, Web Design, UI, UI Design, UX, Web Development, Website, Design, Development" />
+		<meta name="description" content="We’re a creative technology & digital experience collective from Brisbane, Australia. Let's craft some good impressions." />
+
+
+		<title tabindex="1">Toil & Jam</title>
+		<script>
+			
+		</script>
+		<link rel="stylesheet" href="css/reset.css">
+		<style>
+			/* BLACK      -     #030301 */
+			/* OFF-BLACK  -     #232322 */
+			/* MID-GREY   -     #FA945B */
+			/* OFF-WHITE  -     #F9F7F6 */
+			/* WHITE      -     #FFFEFD */
+
+			.bg-black { background: #030301; }
+			.bg-off-black { background: #232322; }
+			.bg-mid-grey { background: #888888; }
+			.bg-active { background: #FA945B; }
+			.bg-off-white { background: #F9F7F6; }
+			.bg-white { background: #FFFEFD; }
+
+			body {
+				margin: 0;
+			}
+			
+
+			.content-area {
+				padding: 0 160px;
+			}
+
+			.banner {
+				min-height: 95vh;
+				overflow: hidden;
+				position: relative;
+			}
+
+			.banner .banner-content-area {
+				position: absolute;
+				bottom: -80px;
+			}
+
+			.banner .banner-content-area div h1 {
+				display: inline-block;
+				margin: 0;
+				padding: 0;
+				font-weight: normal;
+				font-size: 160px;
+				line-height: 160px;
+				font-weight: bold;
+			}
+
+			.banner .banner-content-area div {
+				font-size: 160px;
+				line-height: 160px;
+				font-weight: bold;
+				position: relative;
+				font-family: 'Arial', sans-serif;
+				width: 3000vw;
+			}
+
+			.banner .banner-content-area div span {
+				color: #FA945B !important;
+			}
+
+			.banner .banner-content-area div div {
+				position: absolute;
+				left: -3000vw;
+    			text-align: right;
+			}
+
+			.about {
+				background: #F9F7F6;
+			}
+
+			.about .box {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				min-height: 95vh;
+			}
+
+			.about .box div {
+				width: 100%;
+				box-sizing: border-box;
+				max-width: 670px;
+				padding: 60px 20px;
+			}
+
+			.about .box div p {
+				font-size: 22px;
+				font-weight: normal;
+				text-align: center;
+			}
+
+			.about .box div p a {
+				text-decoration: none;
+				color: #FA945B !important;
+				position: relative;
+			}
+
+			.about .box div p a:before {
+				content: '';
+				position: absolute;
+				bottom: -1px;
+				width: 100%;
+				left: 0;
+				height: 2px;
+				background: #FA945B;
+			}
+
+			.about .box div p a:after {
+				content: '';
+				position: absolute;
+				bottom: -1px;
+				width: 0;
+				left: 50%;
+				height: 2px;
+				background: white;
+				transition: width 200ms ease-in-out, left 200ms ease-in-out;
+			}
+
+			.about .box div p a:hover:after {
+				width: 100%;
+				left: 0;
+			}
+
+			
+
+			.footer {
+				padding: 20px 0;
+				text-align: center;
+			}
+
+			.footer a {
+				text-decoration: none;
+				margin: 0;
+				padding: 5px;
+			}
+
+			.footer a svg path {
+				transition: fill 200ms ease-in-out;
+			}
+
+			.footer a:hover svg path {
+				fill: #FA945B !important;
+			}
+
+			/* Light mode */
+			@media (prefers-color-scheme: light) {
+				.banner .banner-content-area div {
+					color: #F9F7F6;
+				}
+
+				.about {
+					background: #F9F7F6;
+				}
+
+				.footer svg path  {
+					fill: #232322;
+				}
+
+				.about .box div p a:after {
+					background: #232322;
+				}
+			}
+
+			/* Dark mode */
+			@media (prefers-color-scheme: dark) {
+				.banner .banner-content-area div {
+					color: #232322;
+				}
+
+				.about {
+					background: #232322; 
+				}
+
+				.footer svg path  {
+					fill: #F9F7F6;
+				}
+			}
+
+			@media screen and (max-width: 850px) {
+				.banner .banner-content-area {
+					bottom: -60px;
+				}
+
+				.banner .banner-content-area div h1 {
+					font-size: 120px;
+					line-height: 120px;
+				}
+
+				.banner .banner-content-area div {
+					font-size: 120px;
+					line-height: 120px;
+				}
+
+				.content-area {
+					padding: 0 80px;
+				}
+			}
+
+			@media screen and (max-width: 550px) {
+				.banner .banner-content-area {
+					bottom: -40px;
+				}
+
+				.banner .banner-content-area div h1 {
+					font-size: 80px;
+					line-height: 80px;
+				}
+
+				.banner .banner-content-area div {
+					font-size: 80px;
+					line-height: 80px;
+				}
+
+				.content-area {
+					padding: 0 20px;
+				}
+
+				.about .box div p {
+					font-size: 18px;
+				}
+			}
+
+		</style>
+	</head>
+	<body contenteditable="false">
+
+		<div class="banner">
+			<div class="content-area banner-content-area">
+				<div><div>TOIL & JAM & TOIL & JAM & TOIL & JAM &&nbsp</div>TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM</div>
+				<div><div>JAM & TOIL & JAM & TOIL & JAM & TOIL&nbsp</div>& JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL</div>
+				<div><div>TOIL & JAM & TOIL & JAM & TOIL & JAM &&nbsp</div>TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM</div>
+				<div><div>JAM & TOIL & JAM & TOIL & JAM & TOIL&nbsp</div>& JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL</div>
+				<div><div>TOIL & JAM & TOIL & JAM & TOIL & JAM &&nbsp</div>TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM</div>
+				<div><div>JAM & TOIL & JAM & TOIL & JAM & TOIL&nbsp</div>& JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL</div>
+				<div><div>TOIL & JAM & TOIL & JAM & TOIL & JAM &&nbsp</div>TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM</div>
+				<div><div>JAM & TOIL & JAM & TOIL & JAM & TOIL&nbsp</div>& JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL</div>
+				<div><div>TOIL & JAM & TOIL & JAM & TOIL & JAM &&nbsp</div>TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM</div>
+				<div><div>JAM & TOIL & JAM & TOIL & JAM & TOIL&nbsp</div>& JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL</div>
+				<div><div>TOIL & JAM & TOIL & JAM & TOIL & JAM &&nbsp</div>TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM</div>
+				<div><div>JAM & TOIL & JAM & TOIL & JAM & TOIL&nbsp</div>& JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL</div>
+				<div><div>TOIL & JAM & TOIL & JAM & TOIL & JAM &&nbsp</div><h1>TOIL & JAM</h1> & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM</div>
+				<div><div>JAM & TOIL & JAM & TOIL & JAM & TOIL&nbsp</div>& JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL</div>
+				<div><div>TOIL & JAM & TOIL & JAM & TOIL & JAM &&nbsp</div><span>TOIL</span> & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM</div>
+				<div><div>JAM & TOIL & JAM & TOIL & JAM & TOIL&nbsp</div><span>& JAM</span> & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL</div>
+				<div><div>TOIL & JAM & TOIL & JAM & TOIL & JAM &&nbsp</div>TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM & TOIL & JAM</div>
+			</div>
+		</div>
+
+		<div class="about">
+			<div class="content-area">
+				<div class="box">
+					<div>
+						<p>
+							Hello 👋 
+						</p>
+						<p>
+							We're not an another agency.
+						</p>
+						<p>
+							Our focus is products.
+						</p>
+						<p>
+							Systems, platforms, frameworks. Solutions.
+						</p>
+						<p>
+							Enough about us. Tell us about you:
+						</p>
+						
+						<!-- 
+						
+						<p>
+							I'm Tim Grillmeier, a tech and digital development wizard based in the sleepy big country town of Brisbane, Australia. I operate as a premium development partner for companies with complex technical architecture and digital solutions requirements. 
+						</p>
+						<p>
+						    When tasked with a difficult objective I work the problem. I toil. And I jam it out. I toil & jam & toil and jam until a solution is found.
+						</p>
+						<p>
+							I'm currently not accepting new work of any variety. If you'd like to be shortlisted for my next availability, or just want to have a chat, feel free to get in touch:
+						</p>
+						
+						-->
+						
+						<p>
+							<a href="mailto:hello@toilandjam.com" alt="Email Toil & Jam" aria-label="Email Toil & Jam" tab-index="0">hello@toilandjam.com</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="content-area">
+				<p>
+					<a href="https://instagram.com/toilandjam" alt="Toil & Jam on Instagram" aria-label="Go to the Toil and Jam Instagram profile">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M14.017 0H5.947C4.37015 0.00185307 2.85844 0.629143 1.74353 1.74424C0.628623 2.85933 0.00158794 4.37115 0 5.948L0 14.018C0.00185307 15.5948 0.629143 17.1066 1.74424 18.2215C2.85933 19.3364 4.37115 19.9634 5.948 19.965H14.018C15.5948 19.9631 17.1066 19.3359 18.2215 18.2208C19.3364 17.1057 19.9634 15.5938 19.965 14.017V5.947C19.9631 4.37015 19.3359 2.85844 18.2208 1.74353C17.1057 0.628623 15.5938 0.00158794 14.017 0V0ZM17.957 14.017C17.957 14.5344 17.8551 15.0467 17.6571 15.5248C17.4591 16.0028 17.1689 16.4371 16.803 16.803C16.4371 17.1689 16.0028 17.4591 15.5248 17.6571C15.0467 17.8551 14.5344 17.957 14.017 17.957H5.947C4.90222 17.9567 3.90032 17.5415 3.16165 16.8026C2.42297 16.0638 2.008 15.0618 2.008 14.017V5.947C2.00827 4.90222 2.42349 3.90032 3.16235 3.16165C3.90122 2.42297 4.90322 2.008 5.948 2.008H14.018C15.0628 2.00827 16.0647 2.42349 16.8034 3.16235C17.542 3.90122 17.957 4.90322 17.957 5.948V14.018V14.017Z" fill=""/>
+							<path d="M9.98182 4.81909C8.61325 4.82121 7.30136 5.36588 6.33372 6.3337C5.36609 7.30152 4.82168 8.61352 4.81982 9.98209C4.82141 11.351 5.36585 12.6634 6.33372 13.6315C7.3016 14.5996 8.61391 15.1442 9.98282 15.1461C11.3519 15.1445 12.6645 14.5999 13.6326 13.6318C14.6007 12.6637 15.1452 11.3512 15.1468 9.98209C15.1447 8.61318 14.5998 7.30098 13.6315 6.33329C12.6633 5.3656 11.3507 4.82141 9.98182 4.82009V4.81909ZM9.98182 13.1381C9.14507 13.1381 8.34258 12.8057 7.7509 12.214C7.15922 11.6223 6.82682 10.8198 6.82682 9.98309C6.82682 9.14633 7.15922 8.34385 7.7509 7.75217C8.34258 7.16049 9.14507 6.82809 9.98182 6.82809C10.8186 6.82809 11.6211 7.16049 12.2127 7.75217C12.8044 8.34385 13.1368 9.14633 13.1368 9.98309C13.1368 10.8198 12.8044 11.6223 12.2127 12.214C11.6211 12.8057 10.8186 13.1381 9.98182 13.1381V13.1381Z" fill=""/>
+							<path d="M15.1559 6.09509C15.8391 6.09509 16.3929 5.54127 16.3929 4.85809C16.3929 4.17492 15.8391 3.62109 15.1559 3.62109C14.4728 3.62109 13.9189 4.17492 13.9189 4.85809C13.9189 5.54127 14.4728 6.09509 15.1559 6.09509Z" fill=""/>
+						</svg>
+					</a>
+					<a href="https://facebook.com/toilandjam" alt="Toil & Jam on Facebook" aria-label="Go to the Toil and Jam Facebook page">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M8.69501 6.937V8.314H7.68701V9.997H8.69501V15H10.767V9.997H12.157C12.157 9.997 12.288 9.19 12.351 8.307H10.775V7.157C10.775 6.984 11.001 6.753 11.225 6.753H12.353V5H10.818C8.64401 5 8.69501 6.685 8.69501 6.937Z" fill=""/>
+							<path d="M14.017 0H5.947C4.37015 0.00185307 2.85844 0.629143 1.74353 1.74424C0.628623 2.85933 0.00158794 4.37115 0 5.948L0 14.018C0.00185307 15.5948 0.629143 17.1066 1.74424 18.2215C2.85933 19.3364 4.37115 19.9634 5.948 19.965H14.018C15.5948 19.9631 17.1066 19.3359 18.2215 18.2208C19.3364 17.1057 19.9634 15.5938 19.965 14.017V5.947C19.9631 4.37015 19.3359 2.85844 18.2208 1.74353C17.1057 0.628623 15.5938 0.00158794 14.017 0V0ZM17.957 14.017C17.957 14.5344 17.8551 15.0467 17.6571 15.5248C17.4591 16.0028 17.1689 16.4371 16.803 16.803C16.4371 17.1689 16.0028 17.4591 15.5248 17.6571C15.0467 17.8551 14.5344 17.957 14.017 17.957H5.947C4.90222 17.9567 3.90032 17.5415 3.16165 16.8026C2.42297 16.0638 2.008 15.0618 2.008 14.017V5.947C2.00827 4.90222 2.42349 3.90032 3.16235 3.16165C3.90122 2.42297 4.90322 2.008 5.948 2.008H14.018C15.0628 2.00827 16.0647 2.42349 16.8034 3.16235C17.542 3.90122 17.957 4.90322 17.957 5.948V14.018V14.017Z" fill=""/>
+						</svg>
+					</a>
+				</p>
+			</div>
+		</div>
+
+	</body>
+</html>
